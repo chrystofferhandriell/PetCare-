@@ -1,8 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
 
 :root {
-   --color: #9cec13;
-   --gradiente-principal: linear-gradient(to right, #ff6701, #eb2525);
+   --button-border: #9cec13;
+   --button-hover:#4CAF50;
+   --button:#FF8C00;
+   --branco:#FFFFFF;
+   --preto-:#000000;
+   --block:#ffffff57;
+   --box-shadow:#2a2a2b33;
+   --text:#ccc;
+   --card-border:#cccccc94;
+   --boder-seletc:#2563eb;
 }
 
 /* RESET */
@@ -18,7 +26,7 @@ body{
    background-size: cover;
    background-repeat: no-repeat;
    background-position: center;
-   background: -moz-linear-gradient(rgb(255, 255, 255));
+   
 }
 
 main {
@@ -32,8 +40,8 @@ main {
    background-size: cover;
    display: flex;
    justify-content: center;
-   background-color: rgb(255, 255, 255);
-   border: 1px solid rgb(226, 226, 225);
+   background-color: var(--branco);
+   border: 1px solid var(--branco);
    position: fixed;
    top: 0;
    left: 0;
@@ -73,28 +81,28 @@ main {
 }
 
 .cabeçalho-2 a {
-   color: white;
-   background-color: #FF8C00;
+   color: var(--branco);
+   background-color:var(--button);
    font-size: 18px;
    text-align: center;
    padding: 20px;
    border: 2px solid;
    border-radius: 20px;
    text-decoration: none;
-   box-shadow: 0 20px 30px rgba(42, 42, 43, 0.20);
+   box-shadow: 0 20px 30px var(--box-shadow);
   background-color: 0.4s ease;
    transition: transform 0.5s ease, box-shadow 0.5s ease, border-color 0.5s ease;
 }
 
 .cabeçalho-2 a:hover {
-      color: #9cec13;
-      background-color:#4CAF50 ;
+      color:var(--button-border);
+      background-color:var(--button-hover);
       transform: translateY(-4px);
 }
 
 .block{
    display: flex;
-   background-color: rgba(255, 255, 255, 0.342);
+   background-color:var(--block);
 }
 
 .text {
@@ -116,8 +124,9 @@ main {
 
 .text span::before {
   content: "✔ ";
-  color: #000000;
+  color: var(--preto-);
   font-weight: bold;
+
 }
 
 
@@ -125,9 +134,9 @@ main {
    flex: 1;
    margin:30px 100px 0 20px;
    border-radius: 20px;
-   box-shadow: 0 40px 20px rgba(42, 42, 43, 0.20); 
+   box-shadow: 0 40px 20px var(--box-shadow); 
   max-width: 400px;
-  background-color:  rgb(255, 255, 255);
+  background-color: var(--branco);
   padding: 20px;
  
 }
@@ -148,7 +157,7 @@ input, select {
   padding: 10px;
   margin-top: 6px;
   border-radius: 6px;
-  border: 1px solid #ccc;
+  border: 1px solid var(--text);
 }
 
 input:focus, select:focus {
@@ -165,17 +174,18 @@ input:focus, select:focus {
   margin-top: 25px;
   width: 94%;
   padding: 12px;
-  background-color: #FF8C00;
-  color: white;
+  background-color: var(--button);
+  color: var(--branco);
   border: 1px solid;
   border-radius: 6px;
   cursor: pointer;
 }
 
 .button:hover {
-   color: #9cec13;
-   background-color:#4CAF50 ;
+   color: var(--button-border);
+   background-color:var(--button-hover);
 }
+
 
 .container-benef {
      display:flex;
@@ -196,9 +206,9 @@ input:focus, select:focus {
    max-width: 250px;
    margin-right: 20px;
    
-   border:1px solid #cccccc94;
+   border:1px solid var(--card-border);
    border-radius: 20px ;
-   box-shadow: 0 40px 20px rgba(42, 42, 43, 0.20);
+   box-shadow: 0 40px 20px var(--box-shadow)
    
 }
 
@@ -232,15 +242,15 @@ input:focus, select:focus {
 .feeds {
    padding: 10px;
    border-radius: 20px;
-    border: 1px solid #cccccc94;
+    border: 1px solid var(--card-border);
     max-width: 200px ;
-    box-shadow: 0 40px 20px rgba(42, 42, 43, 0.20);
+    box-shadow: 0 40px 20px var(--box-shadow);
 }
 
 .feeds img {
    width: 60px;
    height: 60px;
-   border: 2px solid green;
+   border: 2px solid var(--button-hover);
    border-radius: 40px;
 }
 .feeds h3{
@@ -248,7 +258,7 @@ input:focus, select:focus {
 }
 
 .feeds h4 {
-    color: #afafaf;
+    color: var(--text);
     margin:10px 0 20px 0;
 }
 
@@ -264,6 +274,6 @@ footer {
    width: 100;
    margin-top: 100px;
    padding: 20px;
-   color:white ;
-   background-color: #FF8C00;
+   color:var(--branco) ;
+   background-color: var(--button);
 }
