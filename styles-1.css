@@ -1,3 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+:root {
+   --button-border: #9cec13;
+   --button-hover:#4CAF50;
+   --button:#FF8C00;
+   --branco:#FFFFFF;
+   --box-shadow:#2a2a2b33;
+   --text:#ccc;
+   
+}
 
 /* RESET */
 * {
@@ -24,8 +35,8 @@ main {
    background-size: cover;
    display: flex;
    justify-content: center;
-   background-color: rgb(255, 255, 255);
-   border: 1px solid rgb(226, 226, 225);
+   background-color: var(--branco);
+   border: 1px solid var(--branco);
    position: fixed;
    top: 0;
    left: 0;
@@ -65,22 +76,22 @@ main {
 }
 
 .cabeçalho-2 a {
-   color: white;
-   background-color: #FF8C00;
+   color: var(--branco);
+   background-color: var(--button);
    font-size: 18px;
    text-align: center;
    padding: 20px;
    border: 2px solid;
    border-radius: 20px;
    text-decoration: none;
-   box-shadow: 0 20px 30px rgba(42, 42, 43, 0.20);
+   box-shadow: 0 20px 30px var(--box-shadow);
   background-color: 0.4s ease;
    transition: transform 0.5s ease, box-shadow 0.5s ease, border-color 0.5s ease;
 }
 
 .cabeçalho-2 a:hover {
-      color: #9cec13;
-      background-color:#4CAF50 ;
+      color: var(--button-border);
+      background-color:var(--button-hover) ;
       transform: translateY(-4px);
 }
 
@@ -96,8 +107,8 @@ main {
    font-size: 25px;
    max-width: 60px;
    max-height: 20px;
-    color: white;
-    background-color: #4CAF50;
+    color: var(--branco);
+    background-color: var(--button-hover);
     padding: 20px;
     border-radius: 60px;
 }
@@ -114,7 +125,7 @@ main {
 
 .conatainer-dados {
       max-width: 550px;
-      background-color: #4CAF50;
+      background-color: var(--button-border);
       border-radius:20px;
 }
 
@@ -130,6 +141,6 @@ footer {
    width:100%;
    margin: 48px 0 0 0;
    padding: 20px;
-   color:white ;
-   background-color: #FF8C00;
+   color:var(--branco);
+   background-color: var(--button);
 }
