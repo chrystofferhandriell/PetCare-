@@ -18,7 +18,7 @@
 }
 body{
    max-height:120vh ;
-   background-image: url(imagen/fundo\ da\ pagina.png);
+   background-image:url(../public/fundo\ da\ pagina.png);
    background-size: cover;
    background-repeat: no-repeat;
    background-position: center;
@@ -30,7 +30,7 @@ main {
 }
 
 .cabeçalho{
-   background-image: url(imagen/fundo\ da\ pagina.png);
+   background-image: url(../public/fundo\ da\ pagina.png);
    background-repeat:no-repeat;
    background-size: cover;
    display: flex;
