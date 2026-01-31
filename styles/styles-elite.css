@@ -1,0 +1,324 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+:root {
+   --button:#b1a7a6;
+   --button-hover:linear-gradient(#660708,#a4161a,#ba181b);
+   --button-border:#ba181b;
+   --branco:#FFFFFF;
+   --preto-:#0b090a;
+   --color-cards:#660708;
+   --box-shadow:#69696933;
+   --boder-cards:#cccccc6b;
+   --footer:#660708;
+}
+
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+   
+   max-height:120vh ;
+   background-image: url(../public/elitepet/fundo-elite.jpg);
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center;
+   
+}
+
+main {
+   width: 100%;
+  padding-top: 100px;
+}
+
+.cabeçalho{
+   background-image: url(../public/elitepet/plano-fundo-elite.png);
+   background-repeat:no-repeat;
+   background-size: cover;
+   display: flex;
+   justify-content: center;
+   background-color: var(--branco);;
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 110px;
+} 
+
+.cabeçalho div img {
+   margin-top: 10px;
+   width: 100px;
+   height: 90px;
+   margin-right: 10px; 
+   border-radius: 50px;
+
+}
+.cabeçalho-1 h1 {
+   color: var(--branco);
+   margin:20px 0 0 0;
+}
+
+.cabeçalho-1 h2 {
+       color: var(--branco);
+       font-size: 20px;
+       margin: 0;
+}
+
+.cabeçalho-2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 400px;
+    
+}
+
+.cabeçalho-2 a {
+   color: var(--preto-);
+   background-color:var(--button);
+   font-size: 18px;
+   text-align: center;
+   padding: 20px;
+   border:2px solid ;
+   border-radius: 20px;
+   text-decoration: none;
+   box-shadow: 0 20px 30px var(--box-shadow);
+background-color: 0.4s ease;
+   transition: transform 0.5s ease, box-shadow 0.5s ease, border-color 0.5s ease;
+}
+
+.cabeçalho-2 a:hover {
+      border-color:var(--button-border);
+      color: var(--branco);
+      background:var(--button-hover);
+      transform: translateY(-4px);
+}
+
+.block{
+   display: flex;
+   width: 50%;
+}
+
+.text {
+   color: var(--branco);
+   flex: 1;
+   margin:30px 0 0 50px;
+}
+
+.text h1 {
+    font-size: 48px;
+}
+
+.text p {
+    margin:10px 150px 20px 0 ;
+    font-size: 20px;
+}
+
+.text span {
+    text-decoration: underline;
+}
+
+.text span::before {
+  content: "✔ ";
+  color: var(--color-border);
+  font-weight: bold;
+
+}
+
+.container-benef {
+   background-image: url(../public/elitepet/plano-fundo-elite.png);
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center;
+     text-align: center;
+     font-weight: bold;
+     color: var(--branco);
+     font-size: 25px;
+     margin: 200px 0 0 0;
+     padding: 30px;
+ 
+}
+
+.cards {
+   display: flex;
+   justify-content: center;
+   background-image: url(../public/elitepet/plano-fundo-elite.png);
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center;
+   padding: 20px;
+}
+
+.card{
+   max-width: 200px;
+   margin:0 20px  30px 0;
+   background-color: var(--color-cards);
+   border-radius: 20px ;
+   box-shadow: 0 40px 20px var(--box-shadow);
+   transition:transform 0.5s ease, box-shadow 0.5s ease, border-color 0.5s ease;
+}
+
+.card:hover{
+   
+      color: var(--branco);
+      background:var(--button-hover);
+      transform: translateY(-4px);
+}
+
+.card img {
+    height: 200px;
+    width: 200px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    
+}
+.card h3 {
+    text-align: center;
+    font-size: 20px;
+}
+.card p {
+    padding: 10px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.container-cliente {
+   display:flex;
+     flex-direction: row;
+     justify-content: center;
+     font-weight: bold;
+     font-size: 25px;
+     padding: 50px;
+     color: var(--branco);
+     background-image: url(../public/elitepet/plano-fundo-elite.png);
+     background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center;
+}
+
+.feedbks {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-around;
+   background-image: url(../public/elitepet/plano-fundo-elite.png);
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center;
+   padding: 40px;
+}
+.feeds {
+   background-color: var(--color-cards);
+   padding: 10px;
+   border-radius: 20px;
+    border: 1px solid var(--preto-);
+    max-width: 200px ;
+    box-shadow: 0 40px 20px var(--box-shadow);
+    background-color: 0.4s ease;
+   transition: transform 0.5s ease, box-shadow 0.5s ease, border-color 0.5s ease;
+}
+
+.feeds:hover{
+   color: var(--branco);
+      background:var(--button-hover);
+      transform: translateY(-4px);
+}
+
+.feeds img {
+   width: 60px;
+   height: 60px;
+   border: 2px solid var(--preto-);
+   border-radius: 40px;
+}
+.feeds h3{
+   margin-bottom: 0;
+}
+
+.feeds h4 {
+    color: var(--text);
+    margin:10px 0 20px 0;
+}
+
+.feeds p {
+   text-align:center ;
+   
+}
+
+footer {
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   width: 100;
+   padding: 20px;
+   color:var(--branco) ;
+   background-color: var(--footer);
+}
+
+@media (max-width:768px) {
+
+   body{
+   
+   max-height:120vh ;
+   max-width: 300px;
+   background-image: url(../public/elitepet/fundo-elite.jpg);
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center;
+   
+}
+
+main {
+   width: 100%;
+  padding-top: 100px;
+}
+
+   .cabeçalho div img {
+   margin-top: 10px;
+   width: 100px;
+   height: 90px;
+   margin-right: 10px; 
+   border-radius: 50px;
+
+}
+.cabeçalho-1 h1 {
+   color: var(--branco);
+   margin:20px 0 0 0;
+}
+
+.cabeçalho-1 h2 {
+       color: var(--branco);
+       font-size: 20px;
+       margin: 0;
+}
+
+.cabeçalho-2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 400px;
+    
+}
+
+.cabeçalho-2 a {
+   color: var(--preto-);
+   background-color:var(--button);
+   font-size: 18px;
+   text-align: center;
+   padding: 20px;
+   border:2px solid ;
+   border-radius: 20px;
+   text-decoration: none;
+   box-shadow: 0 20px 30px var(--box-shadow);
+background-color: 0.4s ease;
+   transition: transform 0.5s ease, box-shadow 0.5s ease, border-color 0.5s ease;
+}
+
+.cabeçalho-2 a:hover {
+      border-color:var(--button-border);
+      color: var(--branco);
+      background:var(--button-hover);
+      transform: translateY(-4px);
+}
+
+}
