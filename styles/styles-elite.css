@@ -286,7 +286,7 @@ footer {
    background-color: var(--footer);
 }
 
-/* Animação */
+/* Animação do button */
 @keyframes goldShine {
   0% {
     background-position: 0% 50%;
