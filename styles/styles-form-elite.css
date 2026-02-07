@@ -3,7 +3,8 @@
 :root {
    --button:#b1a7a6;
    --button-hover:linear-gradient(#660708,#a4161a,#ba181b);
-   --button-border:#ba181b;
+   --button-border:#fcd601;
+    --color-text:#fcd601;
    --branco:#FFFFFF;
    --preto-:#0b090a;
    --color-cards:#660708;
@@ -24,8 +25,8 @@ main {
   padding-top: 100px;
 }
 
-.cabeçalho{
-   background-image: url(../public/elitepet/plano-fundo-elite.png);
+.cabecalho{
+   background-image: url(../public/plano-fundo-elite.png);
    background-repeat:no-repeat;
    background-size: cover;
    background-color: var(--branco);;
@@ -37,25 +38,26 @@ main {
    height: 110px;
 } 
 
-.cabeçalho div img {
-   margin: 10px 10px 0 40px;
+.cabecalho div img {
+   margin: 3px 10px 0 40px;
    width: 100px;
-   height: 90px; 
-   border-radius: 50px;
+   height: 100px; 
+
 
 }
-.cabeçalho-1 h1 {
-   color: var(--branco);
+.cabecalho-1 h1 {
+   color: var(--color-text);
+   font-size: 36px;
    margin:20px 0 0 0;
 }
 
-.cabeçalho-1 h2 {
+.cabecalho-1 h2 {
        color: var(--branco);
        font-size: 20px;
        margin: 0;
 }
 
-.cabeçalho-2 {
+.cabecalho-2 {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -65,20 +67,23 @@ main {
 
 .container{
     display: flex;
+    background-image: url(../public/plano-fundo-elite.png);
 }
 
 .container-1{
     flex: 1;
 }
 .container-1 img {
+   margin-top: 30px;
    width: 100%;
-   height: 100%;
+   height: 90vh;
+   
 }
 
 .form{
    flex: 1;
   max-width: 400px;
-  background-image: url(../public/elitepet/plano-fundo-elite.png);
+  background-image: url(../public/plano-fundo-elite.png);
   background-repeat:no-repeat;
    background-size: cover;
   padding: 20px;
@@ -120,7 +125,17 @@ input:focus, select:focus {
   width: 94%;
   padding: 12px;
  color: var(--preto-);
-   background-color:var(--button);
+     background: linear-gradient(
+  90deg,
+  #FFF8E1 0%,
+  #F2D586 30%,
+  #D4AF37 50%,
+  #B8860B 70%,
+  #8A5A1E 100%
+); 
+
+  background-size: 300% 300%;
+  animation: goldShine 4s ease-in-out infinite;
   border: 1px solid ;
   border-radius: 6px;
   cursor: pointer;
@@ -144,4 +159,17 @@ footer {
    padding: 20px;
    color:var(--branco) ;
    background-color: var(--footer);
+}
+
+/* Animação */
+@keyframes goldShine {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
