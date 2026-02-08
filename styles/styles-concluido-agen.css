@@ -4,13 +4,13 @@
    --button:#b1a7a6;
    --button-hover:linear-gradient(#660708,#a4161a,#ba181b);
    --button-border:#fcd601;
-    --color-text:#fcd601;
+   --color-text:#fcd601;
    --branco:#FFFFFF;
    --preto-:#0b090a;
    --color-cards:#660708;
    --box-shadow:#69696933;
-   --boder-cards:#cccccc6b;
-   --footer:#660708;
+   --footer-color:#999;
+   --footer-bottom:#d4af3733;
 }
 
 /* RESET */
@@ -120,9 +120,20 @@ background-color: 0.4s ease;
    font-size: 25px;
    max-width: 60px;
    max-height: 20px;
-    color: var(--branco);
-    background-color: var(--button-hover);
+    color: var(--preto-);
+    background: linear-gradient(
+  90deg,
+  #FFF8E1 0%,
+  #F2D586 30%,
+  #D4AF37 50%,
+  #B8860B 70%,
+  #8A5A1E 100%
+); 
+
+  background-size: 300% 300%;
+  animation: goldShine 4s ease-in-out infinite;
     padding: 20px;
+    border: 1px solid var(--button-border);
     border-radius: 60px;
 }
 
@@ -149,15 +160,66 @@ background-color: 0.4s ease;
      border-radius: 20px;
 }
 
-footer {
-   display: flex;
-   flex-direction: row;
-   justify-content: center;
-   width: 100;
-   margin-top: 100px;
-   padding: 20px;
-   color:var(--branco) ;
-   background-color: var(--footer);
+.footer {
+  background: linear-gradient(180deg, #1a0000, #000);
+  color: var(--branco);
+  padding: 60px 20px 20px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 40px;
+}
+
+.footer h2 {
+  color: var(--color-text);
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.footer h3 {
+  color: var(--color-text);
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+.footer p,
+.footer li {
+  font-size: 14px;
+  color:var(--footer-color);
+  line-height: 1.6;
+}
+
+.footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer ul li {
+  margin-bottom: 8px;
+}
+
+.footer a {
+  text-decoration: none;
+  color:var(--footer-color);
+  transition: color 0.3s;
+}
+
+.footer a:hover {
+  color: var(--color-text);
+}
+
+.footer-bottom {
+  border-top: 1px solid var(--footer-bottom);
+  margin-top: 40px;
+  padding-top: 15px;
+  text-align: center;
+  font-size: 13px;
+  color:var(--footer-color);
 }
 
 /* Animação */
