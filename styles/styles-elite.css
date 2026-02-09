@@ -23,7 +23,7 @@
 body{
    
    max-height:120vh ;
-   background-image: url(../public/fundo-elite.jpg);
+   background-image: url(../public/fundo-elite.);
    background-size: cover;
    background-repeat: no-repeat;
    background-position: center;
@@ -109,7 +109,17 @@ background-color: 0.4s ease;
 
 .block{
    display: flex;
+   width: 100vw;
+   height: 100vh;
+   background-image: url(../public/fundo-elite.jpg);
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center; 
+}
+
+.cantainer-text {
    width: 50%;
+   margin: 20px 40px 0 0;
 }
 
 .text {
@@ -156,7 +166,6 @@ background-size: 300% 300%;
      font-weight: bold;
      color: var(--preto-);
      font-size: 25px;
-     margin: 200px 0 0 0;
      padding: 30px;
 }
 
@@ -352,6 +361,7 @@ background-size: 300% 300%;
 
 /* celular */
 @media (max-width: 480px) {
+
 .cabecalho div img {
    width: 100px;
    height: 100px;
@@ -402,19 +412,85 @@ background-size: 300% 300%;
 background-color: 0.4s ease;
    transition: transform 0.5s ease, box-shadow 0.5s ease, border-color 0.5s ease;
 }
-
 .block{
    display: flex;
-   width: 100vw;
-   height: 100vh;
-   background-image: url(../public/fundo-elite.jpg);
+   width: 400px;
+   height: 59vh;
+   background-image: url(../public/img-agendamento.jpg);
    background-size: cover;
    background-repeat: no-repeat;
    background-position: center; 
+   
+}
+.cantainer-text {
+   width: 100%;
+   margin-top: 10px;
+}
+.text {
+   
+   margin:0 0 0 10px;
 }
 
+.text h1 {
+    margin-bottom: 160px;
+    font-size: 36px;
+}
+
+.text p {
+    margin:0 0 40px 0 ;
+    font-size: 20px;
+}
+
+.cheklist{
+   display: flex;
+   flex-direction: row;
+}
+
+.text span {
+   margin: 0 8px 0 0;
+    text-decoration: underline;
+}
+
+.cards {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+}
+.card{
+   max-width: 100%;
+}
+.card img {
+    margin-left: 20%;  
+}
+.container-cliente {
+   text-align: center; 
+}
+
+.feedbks {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 30px;
+   
+}
+.feeds {
+    max-width: 400px ;
+}
 }
  /* tablet */
+@media (max-width: 768px) {
+   .block{
+   display: flex;
+   margin-right: 100px;
+   width: 100vw;
+   height: 80vh;
+   background-image: url(../public/img-agendamento.jpg);
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center; 
+   
+}
+}
 
 
 /* NOTEBOOK */
