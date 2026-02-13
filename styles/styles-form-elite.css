@@ -29,6 +29,7 @@ main {
    background-image: url(../public/plano-fundo-elite.png);
    background-repeat:no-repeat;
    background-size: cover;
+   z-index: 1;
    background-color: var(--branco);;
    display: flex;
    position: fixed;
